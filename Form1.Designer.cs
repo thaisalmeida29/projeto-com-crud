@@ -44,8 +44,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonCadastrar = new System.Windows.Forms.Button();
-            this.buttonLimpar = new System.Windows.Forms.Button();
             this.btRemover = new System.Windows.Forms.Button();
+            this.button_desconectar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox_nomeBanco = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listView_medidasGlicemias
@@ -103,7 +105,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 282);
+            this.label1.Location = new System.Drawing.Point(14, 325);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
@@ -114,10 +116,10 @@
             // 
             this.tbmedidaGlicemia.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbmedidaGlicemia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbmedidaGlicemia.Location = new System.Drawing.Point(183, 275);
+            this.tbmedidaGlicemia.Location = new System.Drawing.Point(183, 316);
             this.tbmedidaGlicemia.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tbmedidaGlicemia.Name = "tbmedidaGlicemia";
-            this.tbmedidaGlicemia.Size = new System.Drawing.Size(150, 22);
+            this.tbmedidaGlicemia.Size = new System.Drawing.Size(94, 22);
             this.tbmedidaGlicemia.TabIndex = 3;
             // 
             // tbValorGlicemia
@@ -125,20 +127,20 @@
             this.tbValorGlicemia.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbValorGlicemia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbValorGlicemia.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbValorGlicemia.Location = new System.Drawing.Point(183, 336);
+            this.tbValorGlicemia.Location = new System.Drawing.Point(183, 366);
             this.tbValorGlicemia.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tbValorGlicemia.Name = "tbValorGlicemia";
-            this.tbValorGlicemia.Size = new System.Drawing.Size(150, 22);
+            this.tbValorGlicemia.Size = new System.Drawing.Size(94, 22);
             this.tbValorGlicemia.TabIndex = 4;
             // 
             // tbDataMedicao
             // 
             this.tbDataMedicao.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbDataMedicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDataMedicao.Location = new System.Drawing.Point(183, 402);
+            this.tbDataMedicao.Location = new System.Drawing.Point(183, 422);
             this.tbDataMedicao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tbDataMedicao.Name = "tbDataMedicao";
-            this.tbDataMedicao.Size = new System.Drawing.Size(150, 22);
+            this.tbDataMedicao.Size = new System.Drawing.Size(94, 22);
             this.tbDataMedicao.TabIndex = 5;
             this.tbDataMedicao.TextChanged += new System.EventHandler(this.tbDataMedicao_TextChanged);
             // 
@@ -149,14 +151,14 @@
             this.tbPaciente.Location = new System.Drawing.Point(183, 468);
             this.tbPaciente.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tbPaciente.Name = "tbPaciente";
-            this.tbPaciente.Size = new System.Drawing.Size(150, 22);
+            this.tbPaciente.Size = new System.Drawing.Size(94, 22);
             this.tbPaciente.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 336);
+            this.label2.Location = new System.Drawing.Point(16, 373);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 15);
@@ -167,7 +169,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 404);
+            this.label3.Location = new System.Drawing.Point(16, 422);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 15);
@@ -198,19 +200,6 @@
             this.buttonCadastrar.UseVisualStyleBackColor = false;
             this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
-            // buttonLimpar
-            // 
-            this.buttonLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonLimpar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLimpar.Location = new System.Drawing.Point(497, 453);
-            this.buttonLimpar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.buttonLimpar.Name = "buttonLimpar";
-            this.buttonLimpar.Size = new System.Drawing.Size(159, 52);
-            this.buttonLimpar.TabIndex = 11;
-            this.buttonLimpar.Text = "Limpar";
-            this.buttonLimpar.UseVisualStyleBackColor = false;
-            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
-            // 
             // btRemover
             // 
             this.btRemover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -224,14 +213,48 @@
             this.btRemover.UseVisualStyleBackColor = false;
             this.btRemover.Click += new System.EventHandler(this.btRemover_Click);
             // 
+            // button_desconectar
+            // 
+            this.button_desconectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button_desconectar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_desconectar.Location = new System.Drawing.Point(494, 454);
+            this.button_desconectar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.button_desconectar.Name = "button_desconectar";
+            this.button_desconectar.Size = new System.Drawing.Size(162, 52);
+            this.button_desconectar.TabIndex = 13;
+            this.button_desconectar.Text = "Desconectar";
+            this.button_desconectar.UseVisualStyleBackColor = false;
+            this.button_desconectar.Click += new System.EventHandler(this.button_desconectar_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 280);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 15);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Nome do banco:";
+            // 
+            // textBox_nomeBanco
+            // 
+            this.textBox_nomeBanco.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox_nomeBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nomeBanco.Location = new System.Drawing.Point(183, 273);
+            this.textBox_nomeBanco.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.textBox_nomeBanco.Name = "textBox_nomeBanco";
+            this.textBox_nomeBanco.Size = new System.Drawing.Size(94, 22);
+            this.textBox_nomeBanco.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(659, 519);
+            this.Controls.Add(this.textBox_nomeBanco);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button_desconectar);
             this.Controls.Add(this.btRemover);
-            this.Controls.Add(this.buttonLimpar);
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -270,8 +293,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonCadastrar;
-        private System.Windows.Forms.Button buttonLimpar;
         private System.Windows.Forms.Button btRemover;
+        private System.Windows.Forms.Button button_desconectar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox_nomeBanco;
     }
 }
 
